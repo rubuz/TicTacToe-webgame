@@ -1,0 +1,14 @@
+CONFIGURE PLAYER NAMES:
+  Form with input field in modal overlay; also validate user input and show validation feedback
+
+(RE-)START GAME:
+  "Start Game" button should clear current game board or "Game Over" message
+
+TURN-BASED GAMEPLAY:
+  Turns should switch automatically between the two players, every player has his/her own symbol
+
+SELECT FIELDS & CHECK FOR WINNER:
+  Game fields are clickable and the player's symbol is displayed; Check for winner (regular Tic-Tac-Toe rules) after every Turn
+
+SHOW "GAME OVER" WINDOW:
+  Present "Game Over" message which highlight winner (or draw) once the game ends
