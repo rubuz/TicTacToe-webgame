@@ -1,14 +1,19 @@
 :root {
+  --clr-primary-200: #ffde8c;
   --clr-primary-400: #ffb703;
   --clr-primary-600: #fb8500;
   --clr-neutral-100: #ffffff;
   --clr-neutral-200: #8ecae6;
   --clr-neutral-400: #219ebc;
   --clr-neutral-600: #023047;
-  --clr-neutral-900: #333333;
+  --clr-neutral-900: #000000;
 
   --ff-regular: "Open-Sans", sans-serif;
 
   --fw-regular: 400;
   --fw-bold: 700;
+
+  --fs--regular: 1rem;
+  --fs--large: 1.2rem;
+  --fs--small: 0.8rem;
 }
