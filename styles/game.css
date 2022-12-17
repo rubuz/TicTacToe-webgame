@@ -1,7 +1,7 @@
 #active-game {
   text-align: center;
   margin: 2rem 0 5rem 0;
-  /* display: none; */
+  display: none;
 }
 
 #game-over {
@@ -9,11 +9,17 @@
   max-width: 40rem;
   margin: auto;
   padding: 1rem 2rem;
-  background-color: rgb(50, 5, 87);
-  color: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  /* display: none; */
+  background-color: var(--clr-primary-200);
+  color: var(--clr-neutral-900);
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+  border: 3px solid black;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+  display: none;
+}
+
+#winner-name {
+  color: var(--clr-primary-600);
 }
 
 #game-over h2 {
@@ -21,20 +27,26 @@
   margin: 0.5rem 0;
 }
 
+.turn-text {
+  margin-block: 2rem;
+  font-size: var(--fs-large);
+}
+
 #active-player-name {
+  font-size: var(--fs-large);
   font-weight: bold;
-  color: rgb(50, 5, 87);
+  color: var(--clr-primary-600);
 }
 
 #game-board {
   list-style: none;
-  margin: 1rem 0;
+  margin: 1rem 1rem;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 6rem);
-  grid-template-rows: repeat(3, 6rem);
+  grid-template-columns: repeat(3, minmax(100px, 10rem));
+  grid-template-rows: repeat(3, minmax(10rem, 100px));
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.8rem;
 }
 
 #game-board li {
@@ -44,8 +56,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.5rem;
+  font-size: 5rem;
   font-weight: bold;
+  border: 3px solid black;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
+  transition: 0.2s;
 }
 
 #game-board li:hover {

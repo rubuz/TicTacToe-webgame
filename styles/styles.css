@@ -1,5 +1,10 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Open-Sans", sans-serif;
   color: rgb(44, 41, 44);
   background-color: var(--clr-neutral-100);
@@ -9,39 +14,46 @@ footer {
   text-align: center;
   font-size: 0.9rem;
   color: var(--clr-neutral-900);
+  width: 100%;
   position: absolute;
   bottom: 0;
-  width: 100%;
 }
 
 #main-header {
   padding: 2rem 5%;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 header img {
-  max-width: 40%;
-  min-width: 100px;
+  max-width: 400px;
 }
 
 .btn {
   font: inherit;
+  margin: 1rem 0.3rem;
+  width: 9rem;
   padding: 0.5rem 1.5rem;
-  background-color: rgb(140, 0, 255);
-  border: 1px solid rgb(140, 0, 255);
-  color: white;
-  border-radius: 4px;
+  background-color: var(--clr-primary-400);
+  border: 3px solid black;
+  color: var(--clr-neutral-900);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  border-radius: 0.5rem;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .btn:hover {
-  background-color: rgb(79, 10, 190);
-  border-color: rgb(79, 10, 190);
+  background-color: var(--clr-primary-600);
+  color: var(--clr-neutral-100);
+  transform: scale(105%);
 }
 
 .btn-alt {
   cursor: pointer;
-  background-color: var(--clr-primary-400);
+  background-color: var(--clr-neutral-400);
   color: var(--clr-neutral-900);
   text-transform: uppercase;
   font-weight: bold;
@@ -52,16 +64,17 @@ header img {
 }
 
 .btn-alt:hover {
-  background-color: var(--clr-primary-600);
+  background-color: var(--clr-neutral-600);
+  color: var(--clr-neutral-100);
 }
 
 .start-btn {
   font: inherit;
   padding: 1rem 2rem;
-  background-color: var(--clr-primary-600);
+  background-color: var(--clr-primary-400);
   border: 3px solid black;
   /* box-shadow: 4px 4px 0px rgba(0, 0, 0, 1); */
-  color: white;
+  color: var(--clr-neutral-900);
   font-weight: bold;
   font-size: var(--fs--large);
   text-transform: uppercase;
@@ -72,6 +85,7 @@ header img {
 }
 
 .start-btn:hover {
-  background-color: var(--clr-primary-400);
+  background-color: var(--clr-primary-600);
   transform: scale(103%);
+  color: var(--clr-neutral-100);
 }
