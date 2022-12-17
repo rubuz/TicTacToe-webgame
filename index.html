@@ -21,16 +21,22 @@
     <link rel="stylesheet" href="styles/overlays.css" />
     <link rel="stylesheet" href="styles/configuration.css" />
     <link rel="stylesheet" href="styles/game.css" />
+
+    <!-- JavaScript -->
     <script src="scripts/config.js" defer></script>
     <script src="scripts/game.js" defer></script>
     <script src="scripts/app.js" defer></script>
   </head>
   <body>
     <div id="backdrop"></div>
+
     <header id="main-header">
-      <h1>Play Tic, Tac, Toe</h1>
-      <p>Built with HTML, CSS and Vanilla JavaScript</p>
+      <img
+        src="/images/tic-tac-toe-high-resolution-logo-color-on-transparent-background.png"
+        alt="round logo with text TicTacToe"
+      />
     </header>
+
     <main>
       <aside class="modal" id="config-overlay">
         <h2>Chose your name</h2>
@@ -104,6 +110,10 @@
           <li data-col="3" data-row="3"></li>
         </ol>
       </section>
+
+      <footer>
+        <p>Built with HTML, CSS and Vanilla JavaScript</p>
+      </footer>
     </main>
   </body>
 </html>
